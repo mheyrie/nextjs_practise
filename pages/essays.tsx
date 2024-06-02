@@ -1,6 +1,15 @@
 import React from 'react'
 
-export default function essays() {
+
+export async function getStaticProps(){
+    return {
+      props:{
+        pageId: "essays"
+      }
+    }
+  }
+
+export default function Essays() {
   return (
     <div>essays</div>
   )
