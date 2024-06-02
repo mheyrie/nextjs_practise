@@ -37,12 +37,41 @@ function Navbar(props: NavbarProps){
 }
 // Creating a Navbar Component ends
 
+type FooterLinkProps= {
+    text: string
+    url: string
+}
+
+function FooterLink(props: FooterLinkProps){
+    let {url, text} = props
+    return <a href={url} className="transition hover:text-teal-500">{text}</a>
+}
+
+// Footer component starts
+function Footer(){
+    return <footer className='pt-10 px-8 pb-16 border-t'>
+        <div className="flex justify-between gap-6">
+            <div className="flex gap-6 text-sm font-medium text-zinc-600">
+                <FooterLink text={"About Me"} url={"/"}/>
+                <FooterLink text={"Projects"} url={"/projects"}/>
+                <FooterLink text={"Essays"} url={"/essays"}/>
+            </div>
+            <p className="text-sm text-zinc-400">
+            &copy; 2023 Mary Oladele. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+}
+// Footer component ends
+
+
 export default function Layout( {children}: any ) {
-    console.log('Page ID:', children.pageId);
+    
   return (
     <>
         <Navbar pageId={children.props.pageId}/>
         <main>{children}</main>
+        <Footer/>
     </>
     
   )
