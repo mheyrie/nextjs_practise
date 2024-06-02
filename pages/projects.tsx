@@ -55,13 +55,13 @@ export default function Projects() {
       </header>
       <div className="mt-16">
         <h2 className="text-2xl">Apps</h2>
-        <ul className="grid grid-cols-4 gap-x-12 gap-y16 mt-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y16 mt-8">
           <ProjectItem name={"Tracking Chores Reward"} url={"https://apps.apple.com/us/app/tallycoin/id1633932632"} urlDisplay={"App Store"} imageSrc={book5} />
         </ul>
       </div>
       <div className="my-16 ">
         <h2 className="text-2xl">Books</h2>
-        <ul className="grid grid-cols-4 gap-x-12 gap-y16 mt-8">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y16 mt-8">
           <ProjectItem name={"A Practical Learning Guide"} url={"https://www.amazon.com/gp/product/B0BP5P9H31"} urlDisplay={"amazon.com"} imageSrc={book1}/>
           <ProjectItem name={"Nail A Coding Interview:"} url={"https://gracehuang.gumroad.com/l/coding-interview"} urlDisplay={"grace huang.com"} imageSrc={book2}/>
           <ProjectItem name={"A Practical Guide to Writing a Software Tech Design Doc"} url={"https://gracehuang.gumroad.com/l/mqmUt"} urlDisplay={"grace huang.com"} imageSrc={book3}/>

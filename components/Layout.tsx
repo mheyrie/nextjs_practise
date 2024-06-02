@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 
 type NavItemProps = {
     title: string
@@ -69,6 +70,9 @@ export default function Layout( {children}: any ) {
     
   return (
     <>
+        <Head>
+            <link rel="icon" href="/favicon.icon" />
+        </Head>
         <Navbar pageId={children.props.pageId}/>
         <main>{children}</main>
         <Footer/>
